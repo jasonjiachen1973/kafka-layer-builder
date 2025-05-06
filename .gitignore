@@ -1,0 +1,12 @@
+# Ignore python_layer_preview contents but keep the directory itself
+python_layer_preview/*
+!python_layer_preview/.gitkeep
+
+# Ignore layer.zip
+layer.zip
+
+# VSCode settings (optional)
+.vscode/
+
+# macOS system files
+.DS_Store
