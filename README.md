@@ -16,12 +16,14 @@ kafka-layer-builder/
 
 ## 🛠️ How to Build the Layer
 You can build the layer using the provided Dockerfile for consistency across environments.
-
+```
 docker build -t kafka-layer-builder .
 docker run --rm -v "$PWD":/var/task kafka-layer-builder
+```
 Or simply use the build script:
-
+```
 ./build.sh
+```
 After running, you will get layer.zip which can be uploaded to AWS Lambda as a Layer.
 
 ## 📥 Usage in AWS Lambda
